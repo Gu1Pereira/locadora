@@ -1,11 +1,15 @@
 function Trocar(){
     let tipo = document.getElementById("veiculo").value
+    
     if(tipo == "Básico"){
-        document.getAnimationsId("imagem").src="./img/basico.png"
-    }else if(tipo == "imagem"){
-        document.getElementById("imagem").src="./img/esporte.png"
+        document.getElementById("imagem").src="basico.png"
+        document.getElementById("valor").innerHTML = "99"
+    }else if(tipo == "Esporte"){
+        document.getElementById("imagem").src="esporte.png"
+        document.getElementById("valor").innerHTML = "159"
     }else{
-        document.getElementById("imagem").src="./img/completo.png"
+        document.getElementById("imagem").src="completo.png"
+        document.getElementById("valor").innerHTML = "199"
     }
 
 }
