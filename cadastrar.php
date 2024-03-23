@@ -6,18 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="salvar.php" method="post"> 
-        <input name="usuario" placeholder="informe seu usuario">
-        <input name="email" placeholder="seu email">
+    <form action="salvar.php" method="post">
+        <input name="usuario" placeholder="Informe seu usúario">
         <button>Salvar</button>
-     </form>
-     <?php
-     $mensagem = $_GET["mensagem"] ?? "" ; 
-     if($mensagem == "ok"){
-        echo "<h3>Cadastro realizado com sucesso</h3>";
-     }else{
-        echo "bem vindo há pagina";
-     }
-     ?>
+    </form>
 </body>
 </html>

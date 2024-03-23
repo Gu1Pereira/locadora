@@ -8,9 +8,9 @@ echo $nome;
 echo $email;
 echo $veiculo;
 
-$arquivo = fopen("veiculos.csv","a");
-fwrite($arquivo,$nome.";".$email.";".$veiculo. "\n");
+$arquivo = fopen("veiculos.csv", "a");
+fwrite($arquivo, $nome . ";" . $email . ";" . $veiculo . "\n");
 fclose($arquivo);
 
-
+header("location:index.php")
 ?>

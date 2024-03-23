@@ -1,16 +1,11 @@
 <?php
 
-$nome = $_POST["nome"];
-$email = $_POST["email"];
+$usuario = $_POST["usuario"];
 
+echo $usuario;
 
-echo $nome;
-echo $email;
-
-
-$arquivo = fopen("veiculos.csv","a");
-fwrite($arquivo,$nome.";".$email.";". "\n");
+$arquivo = fopen("clientes.txt", "a");
+fwrite($arquivo, $usuario . "\n");
 fclose($arquivo);
-
-header('location:cadastrar.php?mensagem=ok');
+header("location:cadastrar.php")
 ?>
